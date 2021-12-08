@@ -1,0 +1,72 @@
+const data = {
+    products:[
+        {
+            id: '1',
+            name: 'Nvidia RTX-3080',
+            category: 'Graphics Card',
+            image: './img/3080.jpg',
+            price: 9800,
+            brand: 'Nvidia',
+            rating: 5.0,
+            numReviews: 67,
+            description: 'High Performance Product',
+        },
+        {
+            id: '2',
+            name: 'Nvidia RTX-3070',
+            category: 'Graphics Card',
+            image: './img/3070.jpg',
+            price: 6600,
+            brand: 'Nvidia',
+            rating: 4.5,
+            numReviews: 55,
+            description: 'High Quality Product',
+        },
+        {
+            id: '3',
+            name: 'Nvidia RTX-3080',
+            category: 'Graphics Card',
+            image: './img/3080.jpg',
+            price: 9800,
+            brand: 'Nvidia',
+            rating: 5.0,
+            numReviews: 56,
+            description: 'High Performance Product',
+        },
+        {
+            id: '4',
+            name: 'Nvidia RTX-3070',
+            category: 'Graphics Card',
+            image: './img/3070.jpg',
+            price: 6600,
+            brand: 'Nvidia',
+            rating: 4.5,
+            numReviews: 12,
+            description: 'High Quality Product',
+        },
+        {
+            id: '5',
+            name: 'Nvidia RTX-3080',
+            category: 'Graphics Card',
+            image: './img/3080.jpg',
+            price: 9800,
+            brand: 'Nvidia',
+            rating: 5.0,
+            numReviews: 25,
+            description: 'High Performance Product',
+        },
+        {
+            id: '6',
+            name: 'Nvidia RTX-3070',
+            category: 'Graphics Card',
+            image: './img/3070.jpg',
+            price: 6600,
+            brand: 'Nvidia',
+            rating: 4.5,
+            numReviews: 38,
+            description: 'High Quality Product',
+        }
+    ]
+}
+
+export default data;

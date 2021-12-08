@@ -1,0 +1,132 @@
+:root{
+  --white: #ffffff;
+  --lightest-gray: #f8f8f8;
+  --light-gray: #c0c0c0;
+  --golden: #f0c040;
+  --orange: #ff8000;
+  --dark-blue: #203040;   
+  
+  
+
+}
+html{
+  /*Default is 16px, so 62.5% is 10px, 
+  so now 1rem is 10 px, making size 
+  calculations easy with rem*/
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body{
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* #root is the root div in index.html react project */
+#root{
+  height: 100%;
+}
+
+/* Layout */
+.grid-container{
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'main'
+  'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+}
+header{
+  grid-area: header;
+  background-color: var(--dark-blue);
+}
+main{
+  grid-area: main;
+  padding: 1rem;
+}
+footer{
+  grid-area: footer;
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+/* Common */
+h1{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: var(--orange);
+}
+
+/*Header*/
+header a{
+  color: var(--white);
+}
+a.brand{
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: bold;;
+}
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.center{
+  justify-content: center;
+}
+
+/* Image */
+img{
+  border-radius: 0.5rem;
+}
+img.medium{
+  max-width: 29rem;
+  width: 100%;
+}
+
+/* Card */
+.card{
+  border: 0.2rem var(--light-gray) solid;
+  background-color: var(--lightest-gray);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  
+}
+.card-body{
+  padding: 0.8rem;
+  
+}
+.card-body > *{
+  margin-bottom: 0.5rem;
+}
+h2.productName{
+  margin-bottom: -0.5rem;
+  margin-top: -0.5rem;
+}
+.price{
+  font-size: 2rem;
+}
+
+/* Rating */
+.rating{
+  padding: 0.5rem;
+}
+.rating span{
+  color: var(--golden);
+  margin: 0.2rem;
+}
